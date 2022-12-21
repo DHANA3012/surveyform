@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .name{
+            border: 2px solid gray;
+            padding:50px;
+            margin:100px;
+        }
+        .rating{
+            color:goldenrod;
+        }
+        #row1{
+            background-color:rgb(237, 234, 234);
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+<form>
+    <div class="name">
+    <div class="row"><label for="name"><b>Name<span style="color:red">*</span></b></label></div>
+    <div class="row">
+    <div class="col"><input type="text" class="form-control" ></div>
+<div class="col">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <label for="fname">First</label>
+        </div>
+        <div class="col"><label for="lname">Last</label></div>
+    </div>
+    <br>
+    <div class="row"><label for="email"><b>Email<span style="color:red">*</span></b></label></div>
+    <div class="row">
+        <div class="col">
+            <input type="email" class="form-control" >
+        </div>
+    </div>
+    <br>
+    <div class="row"><label for="name"><b>Your Experience<span style="color:red">*</span></b></label></div>
+    <div class="row">
+        <span class="fa fa-star rating"></span>
+        <span class="fa fa-star rating"></span>
+        <span class="fa fa-star rating"></span>
+        <span class="fa fa-star rating "></span>
+        <span class="fa fa-star rating"></span>
+    </div>
+    <div class="row"><label for="exp">Overall,how would you rate experience with us?</label></div>
+    <br>
+    <div class="row"><label for="satisfy"><b>How satisfy are you with<span style="color:red">*</span></b></label></div>
+    <div class="row">
+        <div class="col"> </div>
+        <div class="col">Very Unsatisfied</div>
+        <div class="col">Unsatisfied</div>
+        <div class="col">Neutral</div>
+        <div class="col">Satisfied</div>
+        <div class="col">Very satisfied</div>
+    </div>
+    <div class="row" id="row1">
+        <div class="col">Purchase</div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+    </div>
+    <div class="row">
+        <div class="col">Service</div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+    </div>
+    <div class="row" id="row1">
+        <div class="col">Company overall</div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+    </div>
+    <br>
+    <div class="row"><label for="likely"><b>How likely you are to<span style="color:red">*</span></b></label></div>
+    <div class="row">
+        <div class="col"> </div>
+        <div class="col">Very Unlikely</div>
+        <div class="col">Unlikely</div>
+        <div class="col">Neutral</div>
+        <div class="col">Likely</div>
+        <div class="col">Very Likely</div>
+    </div>
+    <div class="row" id="row1">
+        <div class="col">Buy from us again</div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+    </div>
+    <div class="row">
+        <div class="col">Recommand our products to others</div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+    </div>
+    <div class="row" id="row1">
+        <div class="col">Recommand our company to others</div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+        <div class="col"><input type="radio" name="radio" id="radio"></div>
+    </div>
+    <br>
+        <div class="form-group" class="row">
+            <label for="comments"><b>Additional comments or suggestion</b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+   <button>Submit</button>
+    
+</div>
+  </form>
+</body>
+</html>
